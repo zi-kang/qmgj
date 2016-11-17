@@ -1,0 +1,2117 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1475802197');
+  /* IE9*/
+  src: url('../font/iconfont.eot?t=1475802197#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff?t=1475802197') format('woff'), /* chrome, firefox */ url('../font/iconfont.ttf?t=1475802197') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg?t=1475802197#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.icon {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微软雅黑;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+.clear:after {
+  content: "";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  display: block;
+}
+.clear {
+  *zoom: 1;
+}
+body {
+  background-color: #fff;
+  padding-top: 71px;
+}
+div.qm-g-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+  border-bottom: 1px solid #d9d9de;
+}
+div.qm-g-header a {
+  line-height: 71px;
+  text-align: center;
+  padding: 0 33px;
+  display: inline-block;
+  color: #828282;
+  font-size: 14px;
+}
+div.qm-g-header a.haveBorder {
+  border-right: 1px solid #d9d9de;
+  margin-right: 35px;
+}
+div.qm-g-header a.active {
+  background-color: #f5f6f7;
+}
+div.qm-g-header a img {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.qm-g-header span {
+  color: #a9a9a9;
+}
+div.qm-g-header input {
+  border: 0 none;
+  outline: none;
+  color: #a9a9a9;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 20px;
+  width: 200px;
+  margin-left: 5px;
+}
+div.qm-g-header p {
+  width: 180px;
+  float: right;
+}
+div.qm-g-header p a.logoin {
+  color: #ff4200;
+  font-size: 14px;
+  width: 48px;
+  margin: 0px;
+  padding: 0px;
+}
+div.qm-g-footer {
+  padding: 0px 80px;
+  line-height: 98px;
+  height: 98px;
+  width: 1200px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #150b09;
+}
+div.qm-g-footer span {
+  color: #828587;
+  font-size: 14px;
+  border-right: 2px solid #828587;
+  padding-right: 3px;
+  line-height: 14px;
+  display: inline-block;
+}
+div.qm-g-footer span.noBorderSpan {
+  border-right: none;
+}
+div.qm-g-footer span:hover {
+  color: #ff4200;
+}
+div.qm-g-footer a {
+  float: right;
+  color: #523f2c;
+  font-size: 14px;
+}
+div.qm-g-footer a img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 99px;
+}
+div.qm-p-content {
+  background-color: #f7fafa;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.banner {
+  position: relative;
+}
+div.banner a {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+}
+div.banner a img {
+  width: 100%;
+  height: 600px;
+}
+div.banner span {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+div.banner span.right {
+  right: 35px;
+}
+div.banner span.left {
+  eft: 35px;
+}
+div.hotItem {
+  background-color: #f7fafa;
+  padding-left: 80px;
+  padding-top: 25px;
+  margin-bottom: 64px;
+}
+div.hotItem div.hotItemLeft {
+  float: left;
+  width: 900px;
+}
+div.hotItem div.hotItemLeft p {
+  line-height: 109px;
+}
+div.hotItem div.hotItemLeft p span {
+  color: #150b09;
+  font-size: 18px;
+}
+div.hotItem div.hotItemLeft p a {
+  color: #828587;
+  font-size: 14px;
+  float: right;
+}
+div.hotItem div.hotItemLeft a {
+  display: inline-block;
+  float: left;
+}
+div.hotItem div.hotItemLeft a img {
+  border: 0 none;
+  float: left;
+  margin-right: 20px;
+  width: 318px;
+  height: 242px;
+}
+div.hotItem div.hotItemLeft div {
+  width: 560px;
+  float: left;
+}
+div.hotItem div.hotItemLeft div a {
+  color: #150b09;
+  font-size: 18px;
+  float: none;
+}
+div.hotItem div.hotItemLeft div a:hover {
+  color: #ff4200;
+}
+div.hotItem div.hotItemLeft div span {
+  color: #828587;
+  font-size: 12px;
+  padding-left: 6px;
+}
+div.hotItem div.hotItemLeft div div.moveTxt {
+  color: #828587;
+  font-size: 12px;
+  margin: 25px 0px 45px 6px;
+}
+div.hotItem div.hotItemLeft div div span {
+  display: inline-block;
+  padding-left: 16px;
+}
+div.hotItem div.hotItemLeft div div span.haveBgSpan1 {
+  background: url('../images/lablelogo.png') 0 0 no-repeat;
+  margin-right: 40px;
+  margin-left: 6px;
+}
+div.hotItem div.hotItemLeft div div span.haveBgSpan2 {
+  background: url('../images/weishilogo.png') 0 0 no-repeat;
+}
+div.hotItem div.hotItemLeft div div div {
+  background-color: #d9d9de;
+  height: 8px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+div.hotItem div.hotItemLeft div div div p {
+  height: 8px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #ff4200;
+}
+div.hotItem div.hotItemLeft div div p.informationP {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  line-height: 24px;
+  margin: 10px 10px 0px 10px;
+  float: left;
+}
+div.hotItem div.hotItemLeft div div p.informationP span {
+  color: #828587;
+  font-size: 12px;
+  padding-left: 0px;
+  display: inline-block;
+  width: 100%;
+}
+div.hotItem div.hotItemLeft div div p.informationP span.infoP_first {
+  width: 80px;
+  color: #150b09;
+  font-size: 16px;
+}
+div.hotItem ul {
+  float: left;
+  width: 80px;
+  margin-left: 50px;
+  border-left: 1px solid #dadada;
+}
+div.hotItem ul span {
+  display: block;
+  padding-left: 20px;
+  color: #150b09;
+  font-size: 12px;
+  line-height: 35px;
+  border-left: 1px solid  #f7fafa;
+}
+div.hotItem ul span.indictor,
+div.hotItem ul span:hover {
+  border-left: 1px solid #ff4200;
+  color: #ff4200;
+}
+div.tvMainPush {
+  background-color: #fff;
+  border-top: 1px solid #d9d9de;
+  padding: 24px 80px 65px 80px;
+}
+div.tvMainPush p {
+  line-height: 28px;
+  margin: 40px 0px;
+}
+div.tvMainPush p span {
+  color: #150b09;
+  font-size: 18px;
+}
+div.tvMainPush p a {
+  color: #828587;
+  font-size: 14px;
+  float: right;
+  display: inline-block;
+  width: 80px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #d9d9de;
+}
+div.tvMainPush div.pushMove {
+  width: 319px;
+  border: 1px solid #dddde2;
+  float: left;
+  margin-right: 38px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+div.tvMainPush div.pushMove:last-child {
+  margin-right: 0px;
+  float: right;
+}
+div.tvMainPush div.pushMove a {
+  display: block;
+  color: #150b09;
+  font-size: 14px;
+}
+div.tvMainPush div.pushMove a:hover {
+  color: #ff4200;
+}
+div.tvMainPush div.pushMove a img {
+  width: 100%;
+  height: 234px;
+}
+div.tvMainPush div.pushMove span {
+  color: #828587;
+  font-size: 11px;
+  padding-left: 6px;
+}
+div.tvMainPush div.pushMove div.moveTxt {
+  color: #828587;
+  font-size: 11px;
+  margin: 20px 0px 25px 6px;
+  line-height: 16px;
+  height: 32px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+div.tvMainPush div.pushMove div span.haveBgSpan1 {
+  color: #828587;
+  background: url('../images/lablelogo.png') 0 0 no-repeat;
+  margin-left: 10px;
+  padding-left: 20px;
+  display: block;
+}
+div.tvMainPush div.pushMove div div {
+  background-color: #d9d9de;
+  width: 90%;
+  height: 6px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+div.tvMainPush div.pushMove div div p {
+  margin: 0px;
+  height: 6px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #ff4200;
+}
+div.tvMainPush div.pushMove div p.informationP {
+  display: inline-block;
+  text-align: left;
+  width: 80px;
+  line-height: 24px;
+  margin: 10px 5px;
+  float: left;
+}
+div.tvMainPush div.pushMove div p.informationP span {
+  color: #828587;
+  font-size: 12px;
+  padding-left: 0px;
+  display: inline-block;
+  width: 100%;
+}
+div.tvMainPush div.pushMove div p.informationP span.infoP_first {
+  width: 80px;
+  color: #150b09;
+  font-size: 16px;
+}
+div.cooperation {
+  background-color: #fff;
+  border-top: 1px solid #d9d9de;
+  padding: 24px 80px 85px 80px;
+}
+div.cooperation p {
+  line-height: 109px;
+  color: #150b09;
+  font-size: 18px;
+}
+div.cooperation div a {
+  display: inline-block;
+  margin-left: 20px;
+  float: left;
+}
+div.cooperation div a:first-child {
+  margin-left: 0px;
+}
+div.cooperation div a img {
+  width: 192px;
+  border: 0 none;
+}
+
+div.column {
+  width: 190px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  text-align: center;
+  padding: 0px 10px;
+  line-height: 30px;
+  background-color: #7ac4f4;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 200px;
+  left: 40%;
+}
+
+div.forgetPass_space {
+  width: 100%;
+  height: 100px;
+}
+div.forgetPass {
+  width: 397px;
+  margin: 0px auto;
+  background-color: #fff;
+  border: 1px solid #dcdce0;
+}
+div.forgetPass h2 {
+  color: #150b09;
+  font-size: 20px;
+  margin: 35px 20px 15px 20px;
+}
+div.forgetPass input.spell-input {
+  line-height: 38px;
+  margin: 10px 20px 10px 20px;
+  width: 357px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+}
+div.forgetPass a.forgit-pass {
+  float: right;
+  margin-right: 20px;
+  color: #838383;
+  font-size: 11px;
+}
+div.forgetPass div.to-wear {
+  color: #ff0000;
+  font-size: 11px;
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+}
+div.forgetPass div.gitPass {
+  width: 357px;
+  margin: 28px 20px 18px 20px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  cursor: pointer;
+}
+div.forgetPass div.other-login {
+  width: 100%;
+  color: #150b09;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  height: 14px;
+}
+div.forgetPass div.other-login p {
+  vertical-align: middle;
+  width: 35%;
+  border-top: 1px solid #d9d9de;
+  margin-top: 8px;
+}
+div.forgetPass div.other-login p.left {
+  float: left;
+}
+div.forgetPass div.other-login p.right {
+  float: right;
+}
+div.forgetPass div.img-div {
+  text-align: center;
+  line-height: 90px;
+}
+div.forgetPass div.img-div a {
+  margin-top: 20px;
+  display: inline-block;
+}
+div.forgetPass div.footer {
+  width: 100%;
+  border-top: 1px solid #dbdbe0;
+  text-align: center;
+  background-color: #f7f7f8;
+  line-height: 55px;
+  color: #838383;
+  font-size: 12px;
+}
+div.forgetPass div.footer a {
+  color: #00a0ff;
+  font-size: 12px;
+}
+div.forgetPass div > input.keywords {
+  line-height: 38px;
+  margin: 10px 10px 10px 20px;
+  width: 213px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+}
+div.forgetPass div > button.key-btn {
+  width: 130px;
+  line-height: 38px;
+  margin: 10px 0;
+  border: 0 none;
+}
+
+div.login-space {
+  width: 100%;
+  height: 100px;
+}
+div.login {
+  width: 397px;
+  margin: 0px auto;
+  background-color: #fff;
+  border: 1px solid #dcdce0;
+}
+div.login h2 {
+  color: #150b09;
+  font-size: 20px;
+  margin: 35px 20px 15px 20px;
+}
+div.login input.spell-input {
+  line-height: 38px;
+  margin: 10px 20px 10px 20px;
+  width: 357px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  background-color: #fff;
+}
+div.login a.forgit-pass {
+  float: right;
+  margin-right: 20px;
+  color: #838383;
+  font-size: 11px;
+}
+div.login div.to-wear {
+  color: #ff0000;
+  font-size: 11px;
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+}
+div.login div.login {
+  width: 357px;
+  margin: 28px 20px 18px 20px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  cursor: pointer;
+}
+div.login div.remeber {
+  margin-left: 20px;
+  color: #838383;
+  height: 16px;
+}
+div.login div.remeber span {
+  font-size: 12px;
+  line-height: 16px;
+}
+div.login div.remeber span.rem_span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('../images/sprite-list.png') no-repeat;
+  background-position: 0 -120px;
+}
+div.login div.remeber span.rem_span_click {
+  background-position: 0 -184px;
+}
+div.login div.other-login {
+  width: 100%;
+  color: #150b09;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  height: 14px;
+}
+div.login div.other-login p {
+  vertical-align: middle;
+  width: 35%;
+  border-top: 1px solid #d9d9de;
+  margin-top: 8px;
+}
+div.login div.other-login p.left {
+  float: left;
+}
+div.login div.other-login p.right {
+  float: right;
+}
+div.login div.img-div {
+  text-align: center;
+  line-height: 90px;
+}
+div.login div.img-div a {
+  margin-top: 20px;
+  display: inline-block;
+}
+div.login div.footer {
+  width: 100%;
+  border-top: 1px solid #dbdbe0;
+  text-align: center;
+  background-color: #f7f7f8;
+  line-height: 55px;
+  color: #838383;
+  font-size: 12px;
+}
+div.login div.footer a {
+  color: #00a0ff;
+  font-size: 12px;
+}
+
+div.payment {
+  padding: 0px 80px;
+  background-color: #fff;
+}
+div.payment div.payHeader {
+  line-height: 68px;
+  padding-top: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+div.payment div.payHeader img {
+  display: inline-block;
+  margin-left: 100px;
+}
+div.payment div.payHeader p {
+  background: url(../images/sprite-list.png) no-repeat;
+  width: 485px;
+  height: 44px;
+  float: right;
+  margin-top: 10px;
+}
+div.payment div.payHeader p.sta1 {
+  background-position: 0 -452px;
+}
+div.payment div.payHeader p.sta2 {
+  background-position: 0 -540px;
+}
+div.payment div.payHeader p.sta3 {
+  background-position: 0 -628px;
+}
+div.payment div.payContent {
+  margin-top: 50px;
+  border: 1px solid #d9d9de;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #f7fafa;
+  padding-bottom: 30px;
+}
+div.payment div.payContent p {
+  padding-left: 25px;
+}
+div.payment div.payContent p.payMoney {
+  line-height: 50px;
+  font-size: 12px;
+  color: #858585;
+  border-bottom: 1px solid #d9d9de;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.payment div.payContent p.payMoney span {
+  font-size: 20px;
+  color: #ff4200;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.payment div.payContent p.payReturn {
+  padding-right: 80px;
+  line-height: 24px;
+  padding-top: 34px;
+  font-size: 12px;
+  color: #858585;
+}
+div.payment div.payContent p.payReturn span {
+  font-size: 14px;
+  color: #150b09;
+  display: inline-block;
+  width: 870px;
+  float: right;
+}
+div.payment div.payContent div {
+  padding: 0px 80px 0px 25px;
+}
+div.payment div.payContent div.remark {
+  margin: 35px 0px;
+}
+div.payment div.payContent div.remark span {
+  color: #858585;
+  font-size: 12px;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 24px;
+}
+div.payment div.payContent div.remark textarea {
+  width: 865px;
+  height: 109px;
+  float: right;
+  resize: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 14px;
+  color: #b9b9b9;
+  font-size: 12px;
+}
+div.payment div.payContent div.contact {
+  color: #858585;
+  font-size: 12px;
+  line-height: 30px;
+}
+div.payment div.payContent div.contact input {
+  width: 65px;
+  height: 25px;
+  outline: none;
+  display: inline-block;
+  border: 1px solid #dcdce0;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #bababa;
+  text-align: center;
+}
+div.payment div.payContent div.contact span {
+  font-size: 12px;
+}
+div.payment div.payContent div.contact span.poneNumber {
+  color: #000000;
+  font-weight: bold;
+}
+div.payment div.payContent div.contact span.mark {
+  color: #ff4200;
+}
+div.payment div.payFooter {
+  margin: 10px 0px 85px;
+  padding-left: 25px;
+}
+div.payment div.payFooter h5 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000000;
+  line-height: 30px;
+  font-weight: bold;
+}
+div.payment div.payFooter p {
+  color: #858585;
+  font-size: 12px;
+  line-height: 14px;
+}
+div.payment div.payFooter div.toPay {
+  margin-top: 40px;
+  width: 195px;
+  height: 53px;
+  background-color: #ff4200;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.payment div.payFooter div.toPay a {
+  display: block;
+  width: 100%;
+  line-height: 53px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+div.payment div.paymentToPay div.payNum {
+  color: #858585;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+div.payment div.paymentToPay div.payNum span {
+  color: #e68766;
+}
+div.payment div.paymentToPay div.toSelect {
+  margin-top: 35px;
+  border-bottom: 1px solid #d9d9de;
+}
+div.payment div.paymentToPay div.toSelect div {
+  width: 98px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  color: #858585;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #d9d9de;
+  border-bottom: 0 none;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+div.payment div.paymentToPay div.toSelect div:first-child {
+  margin-right: 7px;
+}
+div.payment div.paymentToPay div.toSelect div:last-child {
+  border: 0 none;
+  float: right;
+  width: 190px;
+}
+div.payment div.paymentToPay div.toSelect div:last-child span {
+  color: #ff4200;
+  font-size: 20px;
+  font-weight: bold;
+}
+div.payment div.paymentToPay div.toSelect div.selectActive {
+  background: url(../images/sprite-list.png) 0 -372px no-repeat;
+  border: 0 none;
+}
+div.payment div.paymentToPay div.banks1 {
+  padding-left: 24px;
+  padding-bottom: 37px;
+  border-bottom: 1px solid #d9d9de;
+}
+div.payment div.paymentToPay div.banks1 p {
+  color: #150b09;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 72px;
+  margin-top: 17px;
+}
+div.payment div.paymentToPay div.banks1 div {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 22px;
+}
+div.payment div.paymentToPay div.banks1 div.selected {
+  background: url(../images/selected.png) 0 center no-repeat;
+}
+div.payment div.paymentToPay div.banks2 {
+  padding-left: 30%;
+  padding-top: 30px;
+  color: #ff4200;
+  height: 150px;
+}
+div.payment div.paymentToPay div.toPayBtn {
+  margin: 40px 0px 97px 25px;
+  width: 152px;
+  height: 50px;
+  background-color: #ff4200;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.payment div.paymentToPay div.toPayBtn a {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+div.payment div.paySure {
+  margin: 15px 0px 130px 0px;
+  padding: 64px 89px;
+  border: 1px solid #dbdbe0;
+  background-color: #f7fafa;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.payment div.paySure h4 {
+  color: #150b09;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+div.payment div.paySure p {
+  color: #150b09;
+  font-size: 14px;
+  line-height: 24px;
+}
+div.payment div.paySure div {
+  margin-top: 55px;
+}
+div.payment div.paySure div a {
+  color: #828587;
+  font-size: 12px;
+  display: inline-block;
+  width: 164px;
+  line-height: 50px;
+  margin-right: 25px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-align: center;
+}
+div.payment div.paySure div a:hover,
+div.payment div.paySure div a.toReview {
+  background-color: #58c7e7;
+  color: #fff;
+  font-weight: bold;
+}
+
+div.personal {
+  background-color: #f5f4f3;
+}
+div.personal header.personalHeader {
+  background-color: #effaff;
+  width: 1200px;
+  padding: 35px 0px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #d9d9de;
+}
+div.personal header.personalHeader div.personalHeaderLeft {
+  float: left;
+  margin: 0px 64px 0px 138px;
+  text-align: center;
+  width: 135px;
+}
+div.personal header.personalHeader div.personalHeaderLeft a {
+  display: inline-block;
+  background-color: #b5e3f6;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  width: 22px;
+  line-height: 22px;
+  height: 22px;
+  margin-right: 11px;
+  margin-top: 15px;
+}
+div.personal header.personalHeader div.personalHeaderRight {
+  float: left;
+  width: 750px;
+}
+div.personal header.personalHeader div.personalHeaderRight h2 {
+  color: #150b09;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 68px;
+  border-bottom: 1px solid #d9d9de;
+}
+div.personal header.personalHeader div.personalHeaderRight h2 span {
+  color: #828282;
+  font-size: 14px;
+  font-weight: normal;
+}
+div.personal header.personalHeader div.personalHeaderRight div.personalClass {
+  margin-top: 40px;
+  line-height: 14px;
+}
+div.personal header.personalHeader div.personalHeaderRight div.personalClass span {
+  float: left;
+  color: #828282;
+  font-size: 14px;
+}
+div.personal header.personalHeader div.personalHeaderRight div.personalClass span:last-child {
+  color: #fe8a18;
+}
+div.personal header.personalHeader div.personalHeaderRight div.personalClass div {
+  width: 200px;
+  height: 8px;
+  background-color: #d9d9de;
+  float: left;
+  margin: 3px 13px 3px 15px;
+}
+div.personal header.personalHeader div.personalHeaderRight div.personalClass div p {
+  height: 8px;
+  background-color: #fe8a18;
+}
+div.personal header.personalHeader div.personalHeaderRight div.loginTime {
+  color: #828282;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 20px;
+}
+div.personal div.list {
+  padding: 0px 0px 58px 80px;
+  position: relative;
+}
+div.personal div.list div.personalList {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  bottom: 58px;
+  background-color: #fff;
+  margin-right: 15px;
+  float: left;
+  width: 160px;
+}
+div.personal div.list div.personalList ul > li {
+  text-align: center;
+  padding-top: 18px;
+}
+div.personal div.list div.personalList ul > li:first-child {
+  padding-top: 25px;
+}
+div.personal div.list div.personalList ul > li a {
+  color: #6a6a6a;
+  font-size: 14px;
+  line-height: 22px;
+  display: inline-block;
+  border-bottom: 1px dashed #e7e7eb;
+}
+div.personal div.list div.personalList ul > li a:hover,
+div.personal div.list div.personalList ul > li a.clickList {
+  font-weight: bold;
+  color: #ff4200;
+  border-bottom: 1px dashed #ff4200;
+}
+div.personal div.list div.views {
+  float: left;
+  margin-left: 180px;
+  width: 866px;
+}
+div.personal div.list div.views div {
+  width: 100%;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 42px 55px 38px;
+  margin-bottom: 15px;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned h2 {
+  border-bottom: 1px solid #d9d9de;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned h2 span {
+  display: block;
+  border-left: 4px solid #43aefc;
+  color: #150b09;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList {
+  width: 48%;
+  float: left;
+  height: 112px;
+  margin-top: 30px;
+  border: 1px solid #dcdce0;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList:nth-child(2n) {
+  float: right;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList img {
+  width: 30%;
+  height: 112px;
+  float: left;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis {
+  float: left;
+  width: 70%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 30px;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis h2 {
+  border-bottom: 0 none;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis h2 a {
+  font-size: 14px;
+  color: #150b09;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis h2 a:hover {
+  color: #ff4200;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis span {
+  color: #828282;
+  font-size: 12px;
+  line-height: 16px;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis div {
+  width: 70%;
+  height: 5px;
+  -webkit-border-radius: 2.5px;
+          border-radius: 2.5px;
+  background-color: #d9d9de;
+  margin: 10px 0px;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis div p {
+  height: 5px;
+  -webkit-border-radius: 2.5px;
+          border-radius: 2.5px;
+  background-color: #ff1717;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis p {
+  color: #828282;
+  font-size: 12px;
+  line-height: 16px;
+}
+div.personal div.list div.views div.presonalHomepage div.concerned div.preList div.concernedLis p span {
+  color: #150b09;
+  font-weight: bold;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 42px 55px 38px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow h2 {
+  border-bottom: 1px solid #d9d9de;
+  margin-bottom: 30px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow h2 span {
+  display: block;
+  border-left: 4px solid #43aefc;
+  color: #150b09;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList {
+  width: 30%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  float: left;
+  margin-right: 5%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #dddde2;
+  padding-bottom: 10px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList:last-child {
+  margin-right: 0px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList a {
+  display: block;
+  width: 100%;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList a img {
+  width: 100%;
+  height: 170px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList h3 {
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 30px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList h3 a {
+  color: #150b09;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList h3 a:hover {
+  color: #ff4200;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList p {
+  color: #828587;
+  font-size: 14px;
+  line-height: 24px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 8px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList p.toplis {
+  float: left;
+  margin-right: 22px;
+  color: #150b09;
+  font-weight: bold;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList p.toplis span {
+  color: #828587;
+  font-size: 12px;
+  font-weight: normal;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList div {
+  width: 70%;
+  height: 5px;
+  -webkit-border-radius: 2.5px;
+          border-radius: 2.5px;
+  background-color: #d9d9de;
+  margin: 15px 8px;
+}
+div.personal div.list div.views div.presonalHomepage div.topNow div.topNowList div p {
+  height: 5px;
+  -webkit-border-radius: 2.5px;
+          border-radius: 2.5px;
+  background-color: #ff1717;
+}
+div.personal div.list div.views div.personalInformation {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px 0px 50px 62px;
+}
+div.personal div.list div.views div.personalInformation div span {
+  color: #150b09;
+  font-size: 12px;
+  display: inline-block;
+  width: 55px;
+  margin-right: 15px;
+  font-weight: bold;
+  text-align: right;
+}
+div.personal div.list div.views div.personalInformation div.avatar {
+  line-height: 70px;
+}
+div.personal div.list div.views div.personalInformation div.avatar input {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  outline: none;
+  position: absolute;
+  opacity: 0;
+}
+div.personal div.list div.views div.personalInformation div.avatar img {
+  display: inline-block;
+  width: 70px;
+  vertical-align: bottom;
+}
+div.personal div.list div.views div.personalInformation div.userName {
+  margin-top: 33px;
+}
+div.personal div.list div.views div.personalInformation div.userName input {
+  width: 170px;
+  height: 26px;
+  line-height: 26px;
+  outline: none;
+}
+div.personal div.list div.views div.personalInformation div.userSex {
+  margin: 25px 0px;
+}
+div.personal div.list div.views div.personalInformation div.concernCircles span {
+  float: left;
+}
+div.personal div.list div.views div.personalInformation div.concernCircles div.inputCheckBox {
+  width: 310px;
+  float: left;
+}
+div.personal div.list div.views div.personalInformation div.concernCircles div.inputCheckBox div {
+  float: left;
+  width: 20%;
+  margin-right: 6%;
+  margin-bottom: 20px;
+  color: #6a6a6a;
+  font-size: 12px;
+  line-height: 16px;
+}
+div.personal div.list div.views div.personalInformation div.concernCircles div.inputCheckBox div:nth-child(4n) {
+  margin-right: 0;
+}
+div.personal div.list div.views div.personalInformation div.concernCircles div.inputCheckBox div p {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #dcdce0;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+div.personal div.list div.views div.personalInformation div.concernCircles div.inputCheckBox div p.clicksBg {
+  background: url(../images/sprite-list.png) 0px -1417px no-repeat;
+  border: 0 none;
+}
+div.personal div.list div.views div.personalInformation div.toSave {
+  width: 142px;
+  height: 44px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 44px;
+  background-color: #ff4200;
+  cursor: pointer;
+  margin-top: 27px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.personal div.list div.views div.personalSecurity {
+  background-color: #fff;
+  padding: 25px 30px 0px 40px;
+}
+div.personal div.list div.views div.personalSecurity header.securiityHeader {
+  border-bottom: 1px solid #d9d9de;
+}
+div.personal div.list div.views div.personalSecurity header.securiityHeader span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #6a6a6a;
+  line-height: 32px;
+  border-bottom: 4px solid #fff;
+  cursor: pointer;
+}
+div.personal div.list div.views div.personalSecurity header.securiityHeader span.activing,
+div.personal div.list div.views div.personalSecurity header.securiityHeader span:hover {
+  border-bottom: 4px solid #43aefc;
+  color: #150b09;
+  font-weight: bold;
+}
+div.personal div.list div.views div.personalSecurity div {
+  margin-top: 35px;
+}
+div.personal div.list div.views div.personalSecurity div.first {
+  padding-bottom: 60px;
+}
+div.personal div.list div.views div.personalSecurity div.first p {
+  color: #838383;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+div.personal div.list div.views div.personalSecurity div.first p span {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  color: #150b09;
+  font-size: 12px;
+  width: 65px;
+}
+div.personal div.list div.views div.personalSecurity div.first p span.number {
+  color: #150b09;
+  font-weight: bold;
+}
+div.personal div.list div.views div.personalSecurity div.first p input {
+  outline: none;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+div.personal div.list div.views div.personalSecurity div.first p input.getKey {
+  width: 80px;
+}
+div.personal div.list div.views div.personalSecurity div.first p button {
+  width: 120px;
+  line-height: 30px;
+  color: #150b09;
+  font-size: 12px;
+  cursor: pointer;
+}
+div.personal div.list div.views div.personalSecurity div.first span.prompt {
+  color: #ff4200;
+  font-size: 14px;
+  font-weight: bold;
+}
+div.personal div.list div.views div.personalSecurity div.first div {
+  width: 142px;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ff4200;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.personal div.list div.views div.personalSecurity div.second {
+  margin-top: 20px;
+  padding-bottom: 85px;
+}
+div.personal div.list div.views div.personalSecurity div.second header {
+  color: #43aefc;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 105px;
+  margin-bottom: 30px;
+}
+div.personal div.list div.views div.personalSecurity div.second p {
+  margin-bottom: 10px;
+}
+div.personal div.list div.views div.personalSecurity div.second p span {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  color: #150b09;
+  font-size: 12px;
+  width: 65px;
+}
+div.personal div.list div.views div.personalSecurity div.second p input {
+  outline: none;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+div.personal div.list div.views div.personalSecurity div.second span.prompt {
+  color: #ff4200;
+  font-size: 14px;
+  font-weight: bold;
+}
+div.personal div.list div.views div.personalSecurity div.second div {
+  width: 142px;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ff4200;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.personal div.list div.views div.personalSecurity div.last {
+  padding-bottom: 85px;
+}
+div.personal div.list div.views div.personalSecurity div.last p {
+  margin-bottom: 10px;
+}
+div.personal div.list div.views div.personalSecurity div.last p span {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  color: #150b09;
+  font-size: 12px;
+  width: 65px;
+}
+div.personal div.list div.views div.personalSecurity div.last p input {
+  outline: none;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+div.personal div.list div.views div.personalSecurity div.last p button {
+  width: 120px;
+  line-height: 30px;
+  color: #150b09;
+  font-size: 12px;
+  cursor: pointer;
+}
+div.personal div.list div.views div.personalSecurity div.last span.prompt {
+  color: #ff4200;
+  font-size: 14px;
+  font-weight: bold;
+}
+div.personal div.list div.views div.personalSecurity div.last div {
+  width: 142px;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ff4200;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+div.personal div.list div.views div.personalCircle {
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+div.personal div.list div.views div.purchaseHistory {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 35px 65px 40px;
+}
+div.personal div.list div.views div.purchaseHistory div span.listTop {
+  color: #6a6a6a;
+  font-size: 12px;
+  line-height: 34px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+div.personal div.list div.views div.purchaseHistory div span.active {
+  color: #150b09;
+  border-bottom: 4px solid #43aefc;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent {
+  padding: 10px 0px;
+  border-bottom: 1px solid #d9d9de;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent img {
+  float: left;
+  width: 160px;
+  height: 97px;
+  margin-right: 30px;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.details {
+  float: left;
+  width: 240px;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.details h4 {
+  color: #150b09;
+  font-size: 14px;
+  margin-top: 15px;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.details span {
+  color: #828282;
+  font-size: 12px;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.details p {
+  color: #150b09;
+  font-size: 12px;
+  margin-top: 15px;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.moneys,
+div.personal div.list div.views div.purchaseHistory div.listContent div.spendStation {
+  width: 100px;
+  float: left;
+  text-align: center;
+  color: #ff4200;
+  line-height: 97px;
+  font-size: 12px;
+  font-weight: bold;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.actived {
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.actived a {
+  display: block;
+  width: 70px;
+  font-size: 12px;
+  margin: 0 auto;
+  color: #43aefc;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.actived a.haventPay {
+  height: 30px;
+  line-height: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #ff4200;
+  color: #fff;
+  margin-top: 10px;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.actived a.mt30 {
+  margin-top: 30px;
+}
+div.personal div.list div.views div.purchaseHistory div.listContent div.actived p {
+  color: #43aefc;
+  font-size: 12px;
+}
+div.personal div.list div.views div.purchaseHistory p.listp {
+  background-color: #f5f4f3;
+  line-height: 45px;
+}
+div.personal div.list div.views div.purchaseHistory p.listp span {
+  font-size: 12px;
+  display: inline-block;
+  color: #150b09;
+}
+div.personal div.list div.views div.purchaseHistory p.listp span.span1 {
+  margin-left: 40px;
+  width: 390px;
+}
+div.personal div.list div.views div.purchaseHistory p.listp span.span2,
+div.personal div.list div.views div.purchaseHistory p.listp span.span3 {
+  width: 100px;
+  text-align: center;
+}
+div.personal div.list div.views div.purchaseHistory p.listp span.span4 {
+  width: 150px;
+  text-align: center;
+}
+
+div.column {
+  width: 190px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  text-align: center;
+  padding: 0px 10px;
+  line-height: 30px;
+  background-color: #7ac4f4;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 200px;
+  left: 40%;
+}
+
+div.programDetails {
+  padding: 45px 75px 0px 80px;
+}
+div.programDetails h2,
+div.programDetails h4 {
+  text-align: center;
+  color: #150b09;
+  font-size: 22px;
+}
+div.programDetails h4 {
+  font-size: 14px;
+  margin: 22px 0px 45px 0px;
+}
+div.programDetails div div.detailsLeft {
+  float: left;
+  width: 679px;
+  padding-bottom: 75px;
+}
+div.programDetails div div.detailsLeft img {
+  display: block;
+  width: 100%;
+  height: 513px;
+}
+div.programDetails div div.detailsLeft p {
+  padding: 40px 0px;
+}
+div.programDetails div div.detailsLeft p span {
+  display: inline-block;
+  padding-left: 16px;
+  font-size: 12px;
+  color: #828587;
+}
+div.programDetails div div.detailsLeft p span.haveBgSpan1 {
+  background: url('../images/lablelogo.png') 0 0 no-repeat;
+  margin-right: 30px;
+  margin-left: 6px;
+}
+div.programDetails div div.detailsLeft p span.haveBgSpan2 {
+  background: url('../images/weishilogo.png') 0 0 no-repeat;
+}
+div.programDetails div div.detailsLeft div {
+  color: #150b09;
+  font-size: 16px;
+}
+div.programDetails div div.detailsRight {
+  float: right;
+  width: 318px;
+  margin: 25px 0px 0px 40px;
+}
+div.programDetails div div.detailsRight div {
+  font-size: 40px;
+  color: #150b09;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 25px;
+}
+div.programDetails div div.detailsRight div p {
+  font-size: 14px;
+  margin-top: 0px;
+  color: #150b09;
+}
+div.programDetails div div.detailsRight div p span {
+  font-weight: normal;
+}
+div.programDetails div div.detailsRight div.buyAndShow {
+  font-size: 14px;
+  color: #828587;
+}
+div.programDetails div div.detailsRight div.buyAndShow a.buyBtn {
+  display: inline-block;
+  width: 194px;
+  line-height: 50px;
+  background-color: #ff4200;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 10px;
+}
+div.programDetails div div.detailsRight div.buyAndShow span {
+  color: #828587;
+  font-size: 18px;
+}
+div.programDetails div div.detailsRight div.logos {
+  margin: 54px auto 0 auto;
+  border-top: 1px solid #d9d9de;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+div.programDetails div div.detailsRight div.logos div.logosLeft {
+  width: 120px;
+  float: left;
+  font-size: 14px;
+  margin-right: 20px;
+}
+div.programDetails div div.detailsRight div.logos div.logosLeft h4 {
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+div.programDetails div div.detailsRight div.logos div.logosLeft a {
+  margin-top: 10px;
+  display: inline;
+  color: #00a0ff;
+  font-size: 14px;
+  float: left;
+}
+div.programDetails div div.detailsRight div.logos div.logosLeft a:last-child {
+  float: right;
+}
+div.programDetails div div.detailsRight p {
+  color: #828587;
+  font-size: 12px;
+  margin-top: 40px;
+}
+div.detailList {
+  line-height: 84px;
+  background-color: #fff;
+  border-top: 1px solid #d9d9de;
+  border-bottom: 1px solid #d9d9de;
+}
+div.detailList span {
+  display: inline-block;
+  margin-right: 80px;
+  text-align: center;
+  color: #150b09;
+  font-size: 14px;
+  font-weight: bold;
+  height: 84px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+div.detailList span.active,
+div.detailList span:hover {
+  border-bottom: 4px solid #ff4200;
+}
+div.detailShows {
+  background-color: #fff;
+  padding-top: 45px;
+}
+
+div.programDetailsExpline div.explineLeft {
+  width: 679px;
+  float: left;
+}
+div.programDetailsExpline div.explineLeft img {
+  width: 100%;
+}
+div.programDetailsExpline div.explineLeft div.CircleExchange {
+  text-align: center;
+  font-size: 16px;
+}
+div.programDetailsExpline div.explineRight {
+  width: 318px;
+  float: right;
+  margin-right: 80px;
+}
+div.programDetailsExpline div.explineRight div {
+  width: 316px;
+  background-color: #f7fafa;
+  border: 1px solid #d9d9de;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-bottom: 30px;
+}
+div.programDetailsExpline div.explineRight div div.top {
+  line-height: 54px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-bottom: 0px;
+  color: #150b09;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 23px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+div.programDetailsExpline div.explineRight div div.top span {
+  font-size: 12px;
+  font-weight: normal;
+}
+div.programDetailsExpline div.explineRight div div.top span.coloSpan {
+  color: #ff4200;
+  margin-left: 90px;
+}
+div.programDetailsExpline div.explineRight div h4 {
+  color: #150b09;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 86px;
+  margin-top: 20px;
+  padding-left: 23px;
+}
+div.programDetailsExpline div.explineRight div p {
+  color: #150b09;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0px 23px;
+}
+div.programDetailsExpline div.explineRight div h5 {
+  padding-left: 23px;
+  color: #150b09;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 82px;
+}
+div.programDetailsExpline div.explineRight div h5 span {
+  font-weight: normal;
+}
+div.programDetailsExpline div.explineRight div button {
+  width: 160px;
+  line-height: 40px;
+  background-color: #ff4200;
+  border: 0 none;
+  outline: none;
+  margin-left: 23px;
+  margin-bottom: 40px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+div.programDetailsExpline div.explineRight div button a {
+  display: block;
+  line-height: 40px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+div.programDetailsExpline div.explineRight div:last-child {
+  background-color: #ffffc9;
+}
+div.programDetailsExpline div.explineRight div:last-child div.top {
+  background-color: #ffffc9;
+}
+div.programDetailsExpline div.explineRight div:last-child p {
+  line-height: 18px;
+  font-size: 12px;
+  margin: 36px 23px;
+}
+div.programDetailsExpline div.explineRight div:last-child p span {
+  color: #ff4200;
+  font-weight: bold;
+}
+
+div.programList div.programList_title {
+  padding: 50px 0px 25px 80px;
+  border-top: 1px solid #d9d9de;
+  border-bottom: 1px solid #d9d9de;
+}
+div.programList div.programList_title p {
+  color: #4d4d4d;
+  font-size: 14px;
+}
+div.programList div.programList_title p span {
+  display: inline-block;
+  padding: 9px 11px;
+  margin-right: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+div.programList div.programList_title p span.actives,
+div.programList div.programList_title p span:hover {
+  background-color: #ff4200;
+  color: #fff;
+}
+div.programList div.moves {
+  background-color: #fff;
+  padding: 0px 80px 60px 80px;
+}
+div.programList div.moves div.pushMove {
+  width: 319px;
+  border: 1px solid #dddde2;
+  float: left;
+  margin: 47px 25px 0px 0px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+div.programList div.moves div.pushMove a {
+  display: block;
+  color: #150b09;
+  font-size: 14px;
+}
+div.programList div.moves div.pushMove a:hover {
+  color: #ff4200;
+}
+div.programList div.moves div.pushMove a img {
+  width: 100%;
+  height: 234px;
+}
+div.programList div.moves div.pushMove span {
+  color: #828587;
+  font-size: 11px;
+  padding-left: 6px;
+}
+div.programList div.moves div.pushMove div.moveTxt {
+  color: #828587;
+  font-size: 11px;
+  margin: 20px 0px 25px 6px;
+  line-height: 16px;
+  height: 32px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+div.programList div.moves div.pushMove div span.haveBgSpan1 {
+  color: #828587;
+  background: url('../images/lablelogo.png') 0 0 no-repeat;
+  margin-left: 10px;
+  padding-left: 20px;
+  display: block;
+}
+div.programList div.moves div.pushMove div div {
+  background-color: #d9d9de;
+  width: 90%;
+  height: 6px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+div.programList div.moves div.pushMove div div p {
+  margin: 0px;
+  height: 6px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #ff4200;
+}
+div.programList div.moves div.pushMove div p.informationP {
+  display: inline-block;
+  text-align: left;
+  width: 60px;
+  line-height: 24px;
+  margin: 10px 25px 10px 5px;
+  float: left;
+}
+div.programList div.moves div.pushMove div p.informationP.firstPs {
+  width: 36px;
+  margin-right: 10px;
+}
+div.programList div.moves div.pushMove div p.informationP span {
+  color: #828587;
+  font-size: 12px;
+  padding-left: 0px;
+  display: inline-block;
+  width: 100%;
+}
+div.programList div.moves div.pushMove div p.informationP span.infoP_first {
+  width: 100%;
+  color: #150b09;
+  font-size: 16px;
+}
+
+div.register-space {
+  width: 100%;
+  height: 100px;
+}
+div.register {
+  width: 397px;
+  margin: 0px auto;
+  background-color: #fff;
+  border: 1px solid #dcdce0;
+}
+div.register h2 {
+  color: #150b09;
+  font-size: 20px;
+  margin: 35px 20px 15px 20px;
+}
+div.register input.spell-input {
+  line-height: 38px;
+  margin: 10px 20px 10px 20px;
+  width: 357px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  background-color: #fff;
+}
+div.register div.to-wear {
+  color: #ff0000;
+  font-size: 11px;
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+}
+div.register div.pres {
+  width: 357px;
+  margin: 28px 20px 18px 20px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  cursor: pointer;
+}
+div.register div.pres a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+div.register div.remeber {
+  margin-left: 20px;
+  color: #838383;
+  height: 16px;
+}
+div.register div.remeber span.rem_span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('../images/sprite-list.png') no-repeat;
+  background-position: 0 -184px;
+}
+div.register div.remeber span.rem_span_click {
+  background-position: 0 -120px;
+}
+div.register div.remeber a {
+  font-size: 12px;
+  line-height: 16px;
+}
+div.register div.other-login {
+  width: 100%;
+  color: #150b09;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  height: 14px;
+}
+div.register div.other-login p {
+  vertical-align: middle;
+  width: 35%;
+  border-top: 1px solid #d9d9de;
+  margin-top: 8px;
+}
+div.register div.other-login p.left {
+  float: left;
+}
+div.register div.other-login p.right {
+  float: right;
+}
+div.register div.img-div {
+  text-align: center;
+  line-height: 90px;
+}
+div.register div.img-div a {
+  margin-top: 20px;
+  display: inline-block;
+}
+div.register div.footer {
+  width: 100%;
+  border-top: 1px solid #dbdbe0;
+  text-align: center;
+  background-color: #f7f7f8;
+  line-height: 55px;
+  color: #838383;
+  font-size: 12px;
+}
+div.register div.footer a {
+  color: #00a0ff;
+  font-size: 12px;
+}
+div.register div > input.keywords {
+  line-height: 38px;
+  margin: 10px 10px 10px 20px;
+  width: 213px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  background-color: #fff;
+}
+div.register div > button.key-btn {
+  width: 130px;
+  line-height: 38px;
+  margin: 10px 0;
+  border: 0 none;
+}

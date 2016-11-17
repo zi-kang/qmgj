@@ -1,0 +1,32 @@
+<div class="programDetailsExpline clear">
+	<div class="explineLeft">
+		<img ng-src="{{information.delImg}}" alt="" ng-show='actSpan==0' >
+		<img ng-src="{{information.deveImg}}" alt="" ng-show='actSpan==1'>
+		<div class="CircleExchange" ng-show='actSpan==2'>
+			圈子交流正在努力开发中……
+		</div>
+	</div>
+	<div class="explineRight">
+		<div>
+			<div class="top">支持 ￥5 <span class="coloSpan">14位支持者</span><span>、限5000位</span></div>
+			<h4>感谢您的支持，您将获得：</h4>
+			<p>{{information.actives}}</p>
+			<h5>预计回报发放时间：<span>项目成功结束后5天内</span></h5>
+			<button type="button"><a ui-sref='payment.toSure({name:information.name,money:5})'>支持￥5</a></button>
+		</div>
+		<div>
+			<div class="top">支持 ￥20 <span class="coloSpan">14位支持者</span><span>、限5000位</span></div>
+			<h4>感谢您的支持，您将获得：</h4>
+			<p>{{information.actives}}</p>
+			<h5>预计回报发放时间：<span>项目成功结束后5天内</span></h5>
+			<button type="button"><a ui-sref='payment.toSure({name:information.name,money:20})'>支持￥20</a></button>
+		</div>
+		<div>
+			<div class="top">支持与退款</div>
+			<p>
+				该项目必须在<span>2015</span>年<span>12</span>月<span>15</span>日上午<span>10</span>点前完成<span>¥32,000</span>才算成功，否则订单将取消。<br><br>
+				订单取消后，您的支持金额，将从你支付的储蓄卡或信用卡原路退回。
+			</p>
+		</div>
+	</div>
+</div>

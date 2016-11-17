@@ -1,0 +1,20 @@
+<div class="paymentToPay">
+	<div class="payNum">
+		订单号：4496480277289&nbsp;&nbsp;&nbsp;请您在<span>24</span>小时内付清款项，否则订单会被自动取消。
+	</div>
+	<div class="toSelect clear">
+		<div ng-class="{selectActive:selsetNum==1?true:false}" ng-click="selectBank(1)">快捷支付</div>
+		<div ng-class="{selectActive:selsetNum==2?true:false}" ng-click="selectBank(2)">网银支付</div>
+		<div>应付款&nbsp;<span>￥{{money}}.00</span></div>
+	</div>
+	<div class="banks1 clear" ng-show="selsetNum==1">
+			<p>请选择银行：</p>
+			<div ng-repeat="bank in banks" ng-class='{selected:clicked == $index}' ng-click = 'toSelect($index)'>
+				<img ng-src="{{bank.img}}" alt="">
+			</div>
+	</div>
+	<div class="banks2" ng-show="selsetNum==2">
+		暂时还没有加盟伙伴，很遗憾~~~~~~~~~
+	</div>
+	<div ng-click='paycess(2)' class="toPayBtn"><a ui-sref='payment.paySure'>确认支付</a></div>
+</div>

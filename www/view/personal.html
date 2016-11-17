@@ -1,0 +1,65 @@
+<div class="personal">
+	<header class="personalHeader clear">
+		<div class="personalHeaderLeft">
+			<img src="images/headSculpture.png" alt="">
+			<div>
+				<a href="#" class="icon">&#xe604;</a>
+				<a href="#" class="icon">&#xe606;</a>
+				<a href="#" class="icon">&#xe605;</a>
+			</div>
+		</div>
+		<div class="personalHeaderRight">
+			<h2>用户HZ17363525&nbsp;<span>{{timeHello}}!</span></h2>
+			<div class="personalClass clear">
+				<span>用户安全等级：</span><div><p ng-style="{width:classs+'%'}"></p></div><span>{{personalClass}}</span>
+			</div>
+			<div class="loginTime">
+				上次登录时间：{{ data - 1000000 | date:"yyyy-MM-dd HH:mm:ss"}}
+			</div>
+		</div>
+	</header>
+	<div class="list clear">
+		<div class="personalList">
+			<ul>
+				<li>
+					<a ui-sref='personal.homepage' ui-sref-active='clickList'>
+						个人主页
+					</a>
+				</li>
+				<li>
+					<a ui-sref='personal.information' ui-sref-active='clickList'>
+						个人信息
+					</a>
+				</li>
+				<li>
+					<a ui-sref='personal.security' ui-sref-active='clickList'>
+						安全设置
+					</a>
+				</li>
+				<li>
+					<a ui-sref='personal.circles' ui-sref-active='clickList'>
+						关注的圈子
+					</a>
+				</li>
+				<li>
+					<a ui-sref='personal.purchaseHistory' ui-sref-active='clickList'>
+						购买记录
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div ui-view class="views toHeight"></div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+

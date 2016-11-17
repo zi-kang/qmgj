@@ -1,0 +1,9 @@
+<div class="payment">
+    <div class="payHeader clear">
+        <span ng-hide="payState==2">{{name}}</span>
+        <img src="images/paySuccess.png" ng-show='payState==2'>
+        <p ng-class="{sta1:payState==0?true:false,sta2:payState==1?true:false,sta3:payState==2?true:false}"></p>
+    </div>
+    <div ui-view></div>
+    
+</div>

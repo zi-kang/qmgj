@@ -1,0 +1,43 @@
+<div class="programDetails">
+	<h2>{{name}}</h2>
+	<h4>by{{information.creator}}</h4>
+	<div class="clear">
+		<div class="detailsLeft">
+			<img ng-src='{{information.img}}' alt="">
+			<p><span class="haveBgSpan1">{{information.type}}</span><span class="haveBgSpan2">卫视推荐</span></p>
+			<div>{{information.abstract}}</div>
+		</div>
+		<div class="detailsRight">
+			<div>
+				{{information.foller}}
+				<p>支持者</p>
+			</div>
+			<div>
+				￥{{information.money}}
+				<p>支持金额&nbsp;<span>总金额 ￥{{information.allMony}}</span></p>
+			</div>
+			<div>
+				{{information.days}}
+				<p>剩余天数</p>
+			</div>
+			<div class="buyAndShow">
+				<a ui-sref='payment.toSure({name:information.name,money:5})' class="buyBtn">支持项目</a>
+				<span class="icon">&#xe603;</span>
+				分享到圈子
+			</div>
+			<p>{{information.expline}}</p>
+			<div class="logos clear">
+				<div class="logosLeft clear">
+					<h4>{{information.creator}}</h4>
+					<a href="#">他的主页</a>
+					<a href="#">联系他</a>
+				</div>
+				<img ng-src='{{information.top}}' alt="">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="detailList" ng-init='lists=["项目介绍","发展历程","圈子交流"]'>
+	<span ng-repeat='lis in lists' ng-class='{active:actSpan==$index?true:false}' ng-click='cilkFn($index)'>{{lis}}</span>
+</div>
+<div class="detailShows" ui-view></div>

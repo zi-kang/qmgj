@@ -1,0 +1,36 @@
+<div class='purchaseHistory'>
+		<div ng-init='lists=["全部","已支付","未支付"]'>
+			<span ng-repeat='lis in lists' class="listTop" ng-class='{active:count==$index}' ng-click='clickFn($index)'>{{lis}}</span>
+		</div>
+		 <p ng-init='sp=["span1","span2","span3","span4"]' class="listp">
+			<span ng-repeat='name in listname' ng-class='sp[$index]'>{{name}}</span>
+		</p>
+		<div class="listContent clear" ng-repeat="dnum in myInformation | filter:states">
+			<img ng-src="{{dnum.img}}" alt="">
+			<div class="details">
+				<h4>{{dnum.name}}</h4>
+				<span>{{dnum.creator}}</span>
+				<p>订单号：{{dnum.number}}</p>
+			</div>
+			<div class="moneys">￥{{dnum.cost}}.00</div>
+			<div class="spendStation">
+				<span ng-show='dnum.state==0'>支付成功</span>
+				<span ng-show='dnum.state==1'>待支付</span>
+			</div>
+			<div class="actived">
+				<a ng-show="dnum.state==1" class="haventPay" ui-sref='payment.toSure({name:dnum.name,money:dnum.cost})'>立即支付</a>
+				<a href="#" ng-class="{mt30:dnum.state==0?true:false}">交易详情</a>
+				<p ng-click="remove(dnum.name)">删除</p>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+</div>
+	

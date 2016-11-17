@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='myapp'>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="bower_components/angular/angular.js"></script>
+	<style>
+		.class{
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+		}
+	</style>
+</head>
+<body ng-controller='myController'>
+<div class="class"></div>
+
+<script>
+	var app = angular.module('myapp',[]);
+	app.controller('myController',['$scope','$http',function($scope,$http){
+		$http({
+			url:'http://10.48.0.84:3000/User/getUserInfoByGet',
+			params:{
+				id:'1601',
+				name:'yinguit'
+			}
+		})
+	}])
+</script>
+</body>
+</html>

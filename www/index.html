@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app='myapp'>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/css/app-f31d2d2eb6.min.css">
+	<!-- endinject -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+	<!-- inject:js -->
+	<script src="/js/app-ee3d165a57.min.js"></script>
+	<!-- endinject -->
+</head>
+<body ng-controller='indexController'>
+	<div class="qm-g-header">
+		<a ui-sref='index'><img src="images/indexlogo.png" alt=""></a>
+		<a ui-sref='index' ui-sref-active='active' ng-click='clickFn(0)'>首页</a>
+		<a ui-sref='programColumn' ui-sref-active='active' ng-click='clickFn(1)'>节目专栏</a>
+		<a ui-sref='community' ui-sref-active='active' ng-click='clickFn(2)' class="haveBorder">圈子</a>
+		<span class="icon">&#xe600;</span>
+		<input type="search" name="" value="" placeholder="输入您想要搜索的内容">
+		<p>
+			<a ui-sref='login' class="logoin">登录</a>
+			<a ui-sref='register' class="logoin">注册</a>
+		</p>
+	</div>
+		
+	<div ui-view class="qm-p-content"></div>
+
+	<div class="qm-g-footer clear">
+		<span>关于全民创造</span>
+		<span>全民创造用户协议</span>
+		<span>全民创造风险提示</span>
+		<span class="noBorderSpan">联系我们</span>
+		<a ui-sref='index'><img src="images/indexlogo1.png" alt="">&copy;2015</a>
+	</div>
+</body>
+</html>

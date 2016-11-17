@@ -1,0 +1,28 @@
+<div class="presonalHomepage">
+	<div class="concerned clear">
+		<h2><span>我关注的项目</span></h2>
+		<div class="preList clear" ng-repeat="perLs in personalLis | limitTo:'4'" >
+			<a ui-sref="programDetails({name:perLs.name})"><img ng-src="{{perLs.img}}" alt=""></a>
+			<div class="concernedLis">
+				<h2><a ui-sref="programDetails({name:perLs.name})">{{perLs.name}}</a></h2>
+				<span>{{perLs.creator}}</span>
+				<div><p ng-style="{width:perLs.progress+'%'}"></p></div>
+				<p>已筹资<span>￥{{perLs.money}}</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="topNow clear">
+		<h2><span>当前最热</span></h2>
+		<div class="topNowList" ng-repeat="tops in personalLis | limitTo:'3'">
+			<a ui-sref="programDetails({name:tops.name})"><img ng-src="{{tops.img}}" alt=""></a>
+			<h3><a ui-sref="programDetails({name:tops.name})">{{tops.name}}</a></h3>
+			<p>{{tops.abstract}}</p>
+			<div><p ng-style="{width:tops.progress+'%'}"></p></div>
+			<p class="toplis">{{tops.progress}}%<br><span>进度</span></p>
+			<p class="toplis">￥{{tops.money}}<br><span>支持金额</span></p>
+			<p class="toplis">{{tops.days}}<br><span>剩余天数</span></p>
+
+		</div>
+	</div>
+	
+</div>

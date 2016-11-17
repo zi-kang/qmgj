@@ -1,0 +1,89 @@
+
+<div class="banner clear">
+	<a ui-sref = 'programDetails({name:srcs.name})' ng-repeat="srcs in imgList" ng-show='$index == showIndex'><img ng-src="{{srcs.src}}" alt=""></a>
+	
+	<span class="icon left" ng-click='clickFn(0)'>&#xe602;</span>
+	<span class="icon right" ng-click='clickFn(1)'>&#xe601;</span>
+</div>
+<div class="hotItem clear">
+	<div class="hotItemLeft" ng-repeat="info in information" ng-show='$index == showIndexs'>
+		<p class="clear"><span>热门项目</span><a ui-sref='programList'>查看更多&gt;&gt;</a></p>
+		<a ui-sref = 'programDetails({name:info.name})'>
+			<img ng-src='{{info.img}}' alt="">
+		</a>
+		<div>
+			<a ui-sref = 'programDetails({name:info.name})'>{{info.name}}</a><br>
+			<span>{{info.creator}}</span>
+			<div class="moveTxt">
+				{{info.abstract}}
+			</div>
+			<div class="clear">
+				<span class="haveBgSpan1">{{info.type}}</span>
+				<span class="haveBgSpan2">卫视推荐</span>
+				<div><p ng-style='{width:info.progress+"%"}'></p></div>
+
+				<p class="informationP">
+					<span class="infoP_first">{{info.progress}}%</span>
+					<span>进度</span>
+				</p>
+				<p class="informationP">
+					<span class="infoP_first">￥{{info.money}}</span>
+					<span>支持金额</span>
+				</p>
+				<p class="informationP">
+					<span class="infoP_first">{{info.foller}}</span>
+					<span>支持者</span>
+				</p>
+				<p class="informationP">
+					<span class="infoP_first">{{info.days}}</span>
+					<span>剩余天数</span>
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<ul>
+		<li ng-repeat='item in itemList'><span ng-class='{indictor:conts==$index?true:false}' ng-click="mouseoverFn($index)">{{item}}</span></li>
+	</ul>
+</div>
+
+<div class="tvMainPush clear">
+	<p class="clear"><span>卫视主推</span><a ui-sref='programList'>查看更多&gt;&gt;</a></p>
+	<div class="pushMove" ng-repeat="push in information | limitTo:'3'" >
+		<a ui-sref = 'programDetails({name:push.name})'><img  ng-src="{{push.img}}"></a>
+		<a ui-sref = 'programDetails({name:push.name})'>{{push.name}}</a>
+		<span>{{push.creator}}</span>
+		<div class="moveTxt">
+			{{push.abstract}}
+		</div>
+		<div class="clear">
+				<span class="haveBgSpan1">{{push.type}}</span>
+				<div><p ng-style='{width:push.progress+"%"}'></p></div>
+
+				<p class="informationP">
+					<span class="infoP_first">{{push.progress}}%</span>
+					<span>进度</span>
+				</p>
+				<p class="informationP">
+					<span class="infoP_first">￥{{push.money}}</span>
+					<span>支持金额</span>
+				</p>
+				<p class="informationP">
+					<span class="infoP_first">{{push.days}}</span>
+					<span>剩余天数</span>
+				</p>
+			</div>
+	</div>
+</div>
+
+<div class="cooperation">
+	<p >合作单位</p>
+	<div class="clear">
+		<a href="#"><img src="../images/anhuiltvlogo.png" alt=""></a>
+		<a href="#"><img src="../images/ucologotv.png" alt=""></a>
+		<a href="#"><img src="../images/pinganxintuologo.png" alt=""></a>
+		<a href="#"><img src="../images/anhuiltvlogo.png" alt=""></a>
+		<a href="#"><img src="../images/ucologotv.png" alt=""></a>
+	</div>
+</div>

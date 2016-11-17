@@ -1,0 +1,44 @@
+<div class="programList">
+    <div class="programList_title">
+        <p class="typeList">
+            <span ng-repeat='lis in itemList' ng-click='itemClFn($index)'
+            ng-class='{actives:$index==showSpan1?true:false}'>{{lis}}</span>
+        </p>
+        <p class="states">
+            <span ng-repeat="stas in states" ng-click='staClFn($index)'
+            ng-class='{actives:$index==showSpan2?true:false}'>{{stas}}</span>
+        </p>
+        <p>
+        	<span ng-repeat='hott in hotTop' ng-click='hotClFn($index)'
+        	ng-class='{actives:$index==showSpan3?true:false}'>{{hott}}</span>
+        </p>
+    </div>
+    <div class="moves clear">
+        <div class="pushMove" ng-repeat="push in information | filter:showList | filter:showState">
+            <a ui-sref = 'programDetails({name:push.name})'><img ng-src="{{push.img}}"></a>
+            <a ui-sref = 'programDetails({name:push.name})'>{{push.name}}</a>
+            <span>{{push.creator}}</span>
+            <div class="moveTxt">
+                {{push.abstract}}
+            </div>
+            <div class="clear">
+                <span class="haveBgSpan1">{{push.type}}</span>
+                <div>
+                    <p ng-style='{width:push.progress+"%"}'></p>
+                </div>
+                <p class="informationP firstPs">
+                    <span class="infoP_first">{{push.progress}}%</span>
+                    <span>进度</span>
+                </p>
+                <p class="informationP">
+                    <span class="infoP_first">￥{{push.money}}</span>
+                    <span>支持金额</span>
+                </p>
+                <p class="informationP">
+                    <span class="infoP_first">{{push.days}}</span>
+                    <span>剩余天数</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

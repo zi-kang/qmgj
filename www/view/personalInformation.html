@@ -1,0 +1,25 @@
+<div class="personalInformation">
+	<div class="avatar">
+		<span>修改头像</span>
+		<input type="file" name="none">
+		<img src="images/Avatar.png" alt="">
+	</div>
+	<div class="userName">
+		<span>用户昵称</span>
+		<input type="text">
+	</div>
+	<div class="userSex">
+		<span>性别</span>
+		<label><input type="radio" name="sexname" value="">男</label>
+		<label><input type="radio" name="sexname" value="">女</label>
+	</div>
+	<div class="concernCircles clear">
+		<span>关注圈子</span>
+		<div class="inputCheckBox clear">
+			<div ng-repeat="checks in checkBox">
+				<p class="circleSelects" ng-click='selectCircle($index)' ng-class="{clicksBg:circles[$index]}"></p>{{checks}}
+			</div>
+		</div>
+	</div>
+	<div class="toSave">保存</div>
+</div>

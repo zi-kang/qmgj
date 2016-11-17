@@ -1,0 +1,33 @@
+<div class="login-space"></div>
+<div class="login">
+    <h2>登录</h2>
+    <form name='myForm' ng-model='myForm' novalidate>
+        <input type="text" name="phone" ng-model='phone' placeholder="请输入您的手机号码" required ng-pattern='/^(1[^012][0-9]{9})$/' class="spell-input">
+        <br>
+        <div ng-show='myForm.phone.$dirty && myForm.phone.$error.required' class="to-wear">手机号是必填项</div>
+        <div ng-show='myForm.phone.$error.pattern' class="to-wear">手机号码不正确</div>
+        <input type="password" name="passw" ng-model='passw' placeholder="请输入您的密码" required minlength="4" maxlength="12" class="spell-input">
+        <br>
+        <div ng-show='myForm.passw.$dirty && myForm.passw.$error.required' class="to-wear">密码不能为空</div>
+        <div ng-show='myForm.passw.$dirty && myForm.passw.$error.minlength || myForm.passw.$error.maxlength' class="to-wear">密码错误，请重新输入！</div>
+        <a ui-sref='forgetPassword' class="forgit-pass">忘记密码</a>
+        <div class="login" ng-style='{background:myForm.$valid?"#2bde73":"#999"}' ng-click='toUser(myForm.$valid?true:false)'>登录</div>
+        <div class="remeber">
+            <span class="rem_span" ng-click='spanBgFn()' ng-class='{rem_span_click:showspan==1?true:false}'></span>
+            <span>记住我</span>
+        </div>
+        <div class="other-login clear">
+            <p class="left"></p>第三方登录
+            <p class="right"></p>
+        </div>
+        <div class="img-div">
+            <a href="#"><img src="images/wechaticon.png" alt=""></a>
+            <a href="#"><img src="images/qqicon.png" alt=""></a>
+            <a href="#"><img src="images/sinnaicon.png" alt=""></a>
+        </div>
+        <div class="footer">
+            新用户？<a ui-sref="register">立即注册</a>
+        </div>
+    </form>
+</div>
+<div class="login-space"></div>

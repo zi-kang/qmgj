@@ -1,0 +1,274 @@
+div.payment{
+	padding: 0px 80px;
+	background-color: #fff;
+	div.payHeader{
+		line-height: 68px;
+		padding-top: 50px;
+		color: #000;
+		font-size: 18px;
+		font-weight: bold;
+		img{
+			display: inline-block;
+			margin-left: 100px;
+		}
+		p{
+			background: url(../images/sprite-list.png)  no-repeat;
+			width: 485px;
+			height: 44px;
+			float: right;
+			margin-top: 10px;
+			&.sta1{background-position: 0 -452px;}
+			&.sta2{background-position: 0 -540px;}
+			&.sta3{background-position: 0 -628px;}
+		}
+	}
+	div.payContent{
+		margin-top: 50px;
+		border: 1px solid #d9d9de;
+		border-radius: 5px;
+		background-color: #f7fafa;
+		padding-bottom: 30px;
+		p{
+			padding-left: 25px;
+			&.payMoney{
+				line-height: 50px;
+				font-size: 12px;
+				color: #858585;
+				border-bottom: 1px solid #d9d9de;
+				border-radius: 5px;
+				span{
+					font-size: 20px;
+					color: #ff4200;
+					font-weight: bold;
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+			&.payReturn{
+				padding-right: 80px;
+				line-height: 24px;
+				padding-top: 34px;
+				font-size: 12px;
+				color: #858585;
+				span{
+					font-size: 14px;
+					color: #150b09;
+					display: inline-block;
+					width: 870px;
+					float: right;
+				}
+
+			}
+		}
+		div{
+			padding: 0px 80px 0px 25px;
+			&.remark{
+				margin: 35px 0px;
+				span{
+					color: #858585;
+					font-size: 12px;
+					line-height: 30px;
+					display: inline-block;
+					padding-left: 24px;
+				}
+				textarea{
+					width: 865px;
+					height: 109px;
+					float: right;
+					resize:none;
+					box-sizing: border-box;
+					border-radius: 5px;
+					padding: 14px;
+					color: #b9b9b9;
+					font-size: 12px;
+				}
+			}
+			&.contact{
+				color: #858585;
+				font-size: 12px;
+				line-height: 30px;
+				input{
+					width: 65px;
+					height: 25px;
+					outline: none;
+					display: inline-block;
+					border: 1px solid #dcdce0;
+					background-color: #fff;
+					border-radius: 5px;
+					line-height: 25px;
+					font-size: 12px;
+					color: #bababa;
+					text-align: center;
+				}
+				span{
+					font-size: 12px;
+					&.poneNumber{
+						color: #000000;
+						font-weight: bold;
+					}
+					&.mark{
+						color: #ff4200;
+					}
+				}
+			}
+		}
+	}
+	div.payFooter{
+		margin: 10px 0px 85px;
+		padding-left: 25px;
+		h5{
+			margin-top: 10px;
+			font-size: 14px;
+			color: #000000;
+			line-height: 30px;
+			font-weight: bold;
+		}
+		p{
+			color: #858585;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		div.toPay{
+			margin-top: 40px;
+			width: 195px;
+			height: 53px;
+			background-color: #ff4200;
+			border-radius: 5px;
+			a{
+				display: block;
+				width: 100%;
+				line-height: 53px;
+				text-align: center;
+				color: #fff;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+	}
+	div.paymentToPay{
+		div{
+			&.payNum{
+				color: #858585;
+				line-height: 30px;
+				font-size: 12px;
+				font-weight: bold;
+				span{
+					color: #e68766;
+				}
+			}
+			&.toSelect{
+				margin-top: 35px;
+				border-bottom: 1px solid #d9d9de;
+				div{
+					width: 98px;
+					height: 30px;
+					line-height: 30px;
+					float: left;
+					color: #858585;
+					font-size: 12px;
+					text-align: center;
+					border: 1px solid #d9d9de;
+					border-bottom: 0 none;
+					cursor: pointer;
+					box-sizing: border-box;
+					&:first-child{
+						margin-right: 7px;
+					}
+					&:last-child{
+						border: 0 none;
+						float: right;
+						width: 190px;
+						span{
+							color: #ff4200;
+							font-size: 20px;
+							font-weight: bold;
+						}
+					}
+					&.selectActive{
+						background: url(../images/sprite-list.png) 0 -372px no-repeat;
+						border: 0 none;
+					}
+				}
+			}
+			&.banks1{
+				padding-left: 24px;
+				padding-bottom: 37px;
+				border-bottom: 1px solid #d9d9de;
+				p{
+					color: #150b09;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 72px;
+					margin-top: 17px;
+				}
+				div{
+					float: left;
+					margin-right: 20px;
+					margin-bottom: 22px;
+					&.selected{
+						background: url(../images/selected.png) 0 center no-repeat;
+					}
+				}
+			}
+			&.banks2{
+				padding-left: 30%;
+				padding-top: 30px;
+				color: #ff4200;
+				height: 150px;
+			}
+			&.toPayBtn{
+				margin: 40px 0px 97px 25px;
+				width: 152px;
+				height: 50px;
+				background-color: #ff4200;
+				border-radius: 5px;
+				a{
+					display: block;
+					width: 100%;
+					line-height: 50px;
+					text-align: center;
+					color: #fff;
+					font-size: 14px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	div.paySure{
+		margin: 15px 0px 130px 0px;
+		padding: 64px 89px;
+		border: 1px solid #dbdbe0;
+		background-color: #f7fafa;
+		border-radius: 5px;
+		h4{
+			color: #150b09;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		p{
+			color: #150b09;
+			font-size: 14px;
+			line-height: 24px;
+
+		}
+		div{
+			margin-top: 55px;
+			a{
+				color: #828587;
+				font-size: 12px;
+				display: inline-block;
+				width: 164px;
+				line-height: 50px;
+				margin-right: 25px;
+				border-radius: 5px;
+				text-align: center;
+				&:hover,&.toReview{
+					background-color: #58c7e7;
+					color: #fff;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+<div class="payContent">
+        <p class="payMoney">支持金额：<span>￥{{money}}.00</span></p>
+        <p class="payReturn clear">
+	        支持回报：
+	        <span>{{pays.actives}}</span>
+        </p>
+        <div class="remark clear">
+            <span>备注：</span>
+            <textarea placeholder="说点什么吧，可以给项目发起者一些小小的鼓励哦~"></textarea>
+        </div>
+        <div class="contact">
+            联系方式：
+            <input type="text" placeholder="您的称呼">
+            <span class="poneNumber">136****8388</span>
+            <span class="mark">（手机号码用于接收回报奖品，客服将根据此手机号与您联系，请确认无误！）</span>
+        </div>
+    </div>
+    <div class="payFooter">
+        <h5>风险说明</h5>
+        <p>
+            1、众筹成功后，如果出现项目方回报无法发放的情况，您需要直接和项目发起人协商解决退款事宜，平台没有帮您追讨资金的义务。
+        </p>
+        <p>
+            2、支持纯抽奖档位一旦您支付成功将不予退款，项目募集失败的除外；支持无私奉献档位，项目一旦募集成功将不予退款。
+        </p>
+        <p>
+            3、全民创造只提供平台服务，回报由项目发起人为您提供并负责发货，同时项目发起人有为您开具发票的法定义务。
+        </p>
+        <h5>特别说明</h5>
+        <p>
+            系统会自动对超出限额的订单进行全额退款，对您造成的不变，深表歉意！
+        </p>
+	    <div class="toPay" ng-click='paycess(1)'>
+	        <a ui-sref='payment.toPay({name:name,money:money})'>确认支付</a>
+	    </div>
+    </div>
