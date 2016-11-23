@@ -1,14 +1,14 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var cleanCss = require('gulp-clean-css');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var ullify = require('gulp-uglify');
-var connect = require('gulp-connect');
-var clean = require('gulp-clean');
-var rev = require('gulp-rev');
-var inject = require('gulp-inject');
-var sequence = require('gulp-sequence');
+var gulp = require('gulp'),
+    less = require('gulp-less'),
+    cleanCss = require('gulp-clean-css'),
+    autoprefixer = require('gulp-autoprefixer'),
+    concat = require('gulp-concat'),
+    ullify = require('gulp-uglify'),
+    connect = require('gulp-connect'),
+    clean = require('gulp-clean'),
+    rev = require('gulp-rev'),
+    inject = require('gulp-inject'),
+    sequence = require('gulp-sequence');
 
 
 
