@@ -1,12 +1,12 @@
 app.controller('boxController',['$scope','$interval','$http',function($scope,$interval,$http){
 		$scope.imgList = [
 			{
-				src:'images/indexbg2.png',
+				src:'images/indexbg1.jpg',
 				name:'《犹太人在上海》音乐剧'
 			},
 
 			{
-				src:'images/indexbg1.jpg',
+				src:'images/indexbg2.png',
 				name:'《晚秋》再现舞台'
 			}
 
