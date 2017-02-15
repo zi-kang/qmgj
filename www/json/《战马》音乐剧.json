@@ -1,5 +1,5 @@
 {
-	"img":"www/images/fairhose.png",
+	"img":"images/fairhose.png",
 	"name":"《战马》音乐剧",
 	"creator":" 上海戏剧学院",
 	"abstract":"《战马》改编自英国桂冠作家麦克·莫波格的同名小说,是一部影响力很广的...",
@@ -8,10 +8,10 @@
 	"money":"62,590",
 	"foller":"4540",
 	"days":"18",
-	"top":"www/images/ut_top.png",
+	"top":"images/ut_top.png",
 	"expline":"该项目必须在2016年12月1日上午10点完成￥32,000，才募集成功开始项目。",
 	"allMony":"32,000",
-	"delImg":"www/images/utinshanghai1.png",
-	"deveImg":"www/images/developmentHistory.png",
+	"delImg":"images/utinshanghai1.png",
+	"deveImg":"images/developmentHistory.png",
 	"actives":"1.战马手机壁纸一套（共7张）；2.每200人随机抽取1名幸运用户，不满200人也按200人抽取，获赠《战马》演员签名海报一份+纪念画册一本；中奖名单将在话题区公布，奖品最终由项目方发送至得奖者手中（免配送费）。"
 }
