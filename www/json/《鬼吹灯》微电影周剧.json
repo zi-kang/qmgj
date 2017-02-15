@@ -1,5 +1,5 @@
 {
-	"img":"../images/glodswinglight.png",
+	"img":"www/images/glodswinglight.png",
 	"name":"《鬼吹灯》微电影周剧",
 	"creator":" 上海微影视",
 	"abstract":"《鬼吹灯》是一部中国大陆的网络小说，作者为天下霸唱，主要内容是盗墓寻宝...",
@@ -8,10 +8,10 @@
 	"money":"100,000",
 	"foller":"4540",
 	"days":"3",
-	"top":"../images/ut_top.png",
+	"top":"www/images/ut_top.png",
 	"expline":"该项目必须在2016年12月1日上午10点完成￥32,000，才募集成功开始项目。",
 	"allMony":"32,000",
-	"delImg":"../images/utinshanghai1.png",
-	"deveImg":"../images/developmentHistory.png",
+	"delImg":"www/images/utinshanghai1.png",
+	"deveImg":"www/images/developmentHistory.png",
 	"actives":"1.鬼吹灯手机壁纸一套（共7张）；2.每200人随机抽取1名幸运用户，不满200人也按200人抽取，获赠《鬼吹灯》演员签名海报一份+纪念画册一本；中奖名单将在话题区公布，奖品最终由项目方发送至得奖者手中（免配送费）。"
 }
